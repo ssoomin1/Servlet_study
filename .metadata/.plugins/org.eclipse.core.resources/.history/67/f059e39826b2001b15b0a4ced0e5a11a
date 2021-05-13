@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+id="WebApp_ID" version="3.0">
+  <display-name>servletPrj</display-name>
+  
+  <servlet>
+  	<servlet-name>first</servlet-name>
+  	<servlet-class>kr.hs.servlet.firstServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>first</servlet-name>
+  	<!-- http://localhost:8080/hello hello로 접속했을 때 first라는 이름을 가진 서블릿을 실행시킬것이다.  -->
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <!-- http://localhost:8080/hello로 접속해을 때 first라고 이름 지어진
+  	   firstServlet.class를 실행하겠다. (WEB-INF/classes/.class를 찾아서) -->
+  	   
+  
+  <servlet>
+  	<servlet-name>Second</servlet-name>
+  	<servlet-class>kr.hs.servlet.SecondServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servle-name>Second</servle-name>
+  	<url-pattern>/second</url-pattern>
+  </servlet-mapping>
+</web-app>
